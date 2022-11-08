@@ -8,71 +8,98 @@
   <meta name="description" content="Это сайт -  резюме Волобуевой О.В.">
 
   <title>VOLOBUEVA RESUME</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="51.jpg" width="200" alt="Volobueva O.V.">
-  <h1>ВОЛОБУЕВА ОЛЬГА</h1>
-  <p>Осенью 2022 года прошла курс Минина В., основателя <strong>популярного Youtube канала</strong> и директора онлайн-школы по программированию <strong>Result School</strong></p>
-  <p>Мои увлечения: <em>изучение английского языка, путешествия, спорт и чтение</em></p>
 
-  <h4>Список социальных сетей:</h4>
-  |
-  <a href="https://vk.com/olgaviktorovna_v" target="_blank">VK</a>
-  |
-  <a href="https://www.facebook.com/olga.volobueva.969" target="_blank">facebook</a>
-  |
-
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Плавание</li>
-    <li>Велосипед</li>
-    <li>Бег</li>
-  </ol>
-
-  <h2>Опыт работы</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>SoftNord</td>
-        <td>Fronted</td>
-        <td>2020-2021</td>
-      </tr>
-      <tr>
-        <td>NBAM</td>
-        <td>Fronted</td>
-        <td>2021-2022</td>
-      </tr>
-    </tbody>
-  </table>
-
-<h2>Связаться со мной</h2>
-<form action="">
-  <div>
-    <label for="text">Ваше имя:</label>
-    <input type="text" id= "text" placeholder="Введите имя">
-  </div>
-
-  <div>
-    <label for="email">Ваш email:</label>
-    <input type="email" placeholder="Введите email">
-  </div>
+<div class="container">
+  <div class="info">
+    <img src="51.jpg" alt="Volobueva O.V." class="avatar">
   
-  <div>
-    <label for="message">Ваше сообщение:</label>
-    <br>
-    <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+
+    <div class="info-text">
+      <h1>ВОЛОБУЕВА ОЛЬГА</h1>
+
+      <p>Осенью 2022 года прошла курс Минина В., основателя <strong>популярного Youtube канала</strong> и директора онлайн-школы по программированию <strong>Result School</strong></p>
+      <p>Мои увлечения: <em>изучение английского языка, путешествия, спорт и чтение</em></p>
+
+      <h4>Список социальных сетей:</h4>
+      |
+      <a href="https://vk.com/olgaviktorovna_v" target="_blank">VK</a>
+      |
+      <a href="https://www.facebook.com/olga.volobueva.969" target="_blank">facebook</a>
+      |
+    </div>
+
+  </div>  
+
+  <div class="card bg-green">
+    <h2>Мои хобби</h2>
+    <ol class="list">
+      <li>Плавание</li>
+      <li>Велосипед</li>
+      <li>Бег</li>
+    </ol>
+    </div>
+
+    <div class="card bg-yellow">
+    <h2>Опыт работы</h2>
+    <table class="table">
+      <!-- <thead>
+        <tr>
+          <th>Название</th>
+          <th>Должность</th>
+          <th>Год</th>
+        </tr>
+      </thead> -->
+      <tbody>
+        <tr>
+          <td>SoftNord</td>
+          <td>Fronted</td>
+          <td>2020-2021</td>
+        </tr>
+        <tr>
+          <td>NBAM</td>
+          <td>Fronted</td>
+          <td>2021-2022</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <button type="submit">Отправить!</button>
+  <div class="card bg-red">
+    <h2>Курсы повышения квалификации</h2>
+      <ul class="link-list">
+        <li>Course 1</li>
+        <li>Course 2</li>
+      </ul>
+  </div>
 
-</form>
+  
+  <form action="/" class="form">
+    <h2>Связаться со мной</h2>
 
+    <div class="form-row">
+
+    <div class="form-group">
+      <label for="text">Ваше имя:</label>
+      <input type="text" id= "text" placeholder="Введите имя">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Ваш email:</label>
+      <input type="email" placeholder="Введите email">
+    </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Ваше сообщение:</label>
+      <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">Отправить!</button>
+
+  </form>
+</div>
 </body>
 </html>
